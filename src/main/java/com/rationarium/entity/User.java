@@ -26,13 +26,16 @@ public class User extends BaseEntity{
     @Column(length = 50)
     private boolean enabled;
     private String phone;
-    private Integer companyId;
+
 
     @ManyToMany
     @JoinTable(name = "UserRole",
             joinColumns = @JoinColumn(name="user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private List<Role> roleList;
+
+    @ManyToOne(fetch = FetchType.LAZY,cascade = {CascadeType.PERSIST,CascadeType.MERGE})
+    private Company company;
 
 
 }
