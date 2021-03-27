@@ -34,7 +34,7 @@ public class User extends BaseEntity{
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private List<Role> roleList;
 
-    @ManyToOne(fetch = FetchType.LAZY,cascade = {CascadeType.PERSIST,CascadeType.MERGE})
+    @ManyToOne(fetch = FetchType.LAZY)
     private Company company;
 
 
