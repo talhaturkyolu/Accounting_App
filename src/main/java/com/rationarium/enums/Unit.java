@@ -1,19 +1,17 @@
 package com.rationarium.enums;
 
-public enum UserStatus {
+public enum Unit {
 
-    ACTIVE("Active"), PASSIVE("Passive");
+    POUND("LB"), PIECE("Piece");
 
     private final String value;
 
-    private UserStatus(String value){
+    private Unit(String value){
         this.value=value;
     }
 
     public String getValue(){
         return value;
     }
-
-
 
 }

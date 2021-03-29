@@ -1,6 +1,7 @@
 package com.rationarium.dto;
 
 import com.rationarium.enums.Status;
+import com.rationarium.enums.Unit;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,16 +11,15 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDTO {
+public class ProductDTO {
 
     private Long id;
-    private String FirstName;
-    private String LastName;
-    private String password;
-    private String phoneNumber;
-    private String email;
-    private RoleDTO roleDTO;
-    private CompanyDTO companyDTO;
+    private String name;
+    private Integer quantity;
+    private CategoryDTO categoryDTO;
     private Status status;
+    private String description;
+    private String tax;
+    private Unit unit;
 
 }

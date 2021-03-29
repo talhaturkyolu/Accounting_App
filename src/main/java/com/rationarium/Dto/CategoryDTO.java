@@ -1,5 +1,6 @@
 package com.rationarium.dto;
 
+import com.rationarium.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,9 +10,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class RoleDTO {
+public class CategoryDTO {
 
-    private String name;
     private Long id;
-
+    private String description;
+    private Status status;
 }

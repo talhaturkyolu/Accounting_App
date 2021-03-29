@@ -1,4 +1,4 @@
-package com.rationarium.Dto;
+package com.rationarium.dto;
 
 import com.rationarium.enums.CompanyStatus;
 import com.rationarium.enums.CompanyType;
