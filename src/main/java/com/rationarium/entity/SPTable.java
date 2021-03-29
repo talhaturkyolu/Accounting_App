@@ -15,9 +15,8 @@ import javax.persistence.*;
 @Entity(name = "SPTable")
 public class SPTable extends BaseEntity{
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "company_name")
-    private Company companyName;
+
+    private String companyName;
     private String phone;
     private String email;
     @ManyToOne(fetch = FetchType.LAZY)
