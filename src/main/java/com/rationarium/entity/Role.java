@@ -16,7 +16,7 @@ import java.util.List;
 @Entity
 public class Role extends BaseEntity{
 
-    private String name;
+    private String description;
     private boolean enabled;
 
     @ManyToMany(mappedBy = "roleList")

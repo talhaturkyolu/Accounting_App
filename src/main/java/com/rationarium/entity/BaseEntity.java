@@ -6,7 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
+
 
 @Getter
 @Setter
@@ -22,10 +23,10 @@ public class BaseEntity {
     @Column(nullable = false,updatable = false)
     private String createdBy;
     @Column(nullable = false,updatable = false)
-    private LocalTime createdTime;
+    private LocalDateTime createdTime;
     @Column(nullable = false,updatable = false)
     private String updateBy;
     @Column(nullable = false,updatable = false)
-    private LocalTime updatedTime;
+    private LocalDateTime updatedTime;
 
 }
