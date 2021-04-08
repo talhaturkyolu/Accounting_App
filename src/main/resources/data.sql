@@ -1,5 +1,9 @@
 insert into role(created_by, created_time, update_by, updated_time, enabled, description)
 VALUES ('Talha Turkyolu', '2021-03-29 00:00:00', 'Talha Turkyolu', '2021-03-29 00:00:00', true, 'Root');
+VALUES ('Admin', '2021-03-29 00:00:00', 'Admin', '2021-03-29 00:00:00', true, 'Admin');
+VALUES ('Manager', '2021-03-29 00:00:00', 'Manager', '2021-03-29 00:00:00', true, 'Manager');
+VALUES ('Employee', '2021-03-29 00:00:00', 'Employee', '2021-03-29 00:00:00', true, 'Employee');
+
 
 
 
