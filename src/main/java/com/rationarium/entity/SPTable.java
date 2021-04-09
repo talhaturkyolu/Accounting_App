@@ -1,6 +1,9 @@
 package com.rationarium.entity;
 
+import com.rationarium.enums.CompanyStatus;
+import com.rationarium.enums.CompanyType;
 import com.rationarium.enums.State;
+import com.rationarium.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,10 +25,14 @@ public class SPTable extends BaseEntity{
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "company_id")
     private Company companyId;
-    private String type;
+    @Enumerated(EnumType.STRING)
+    private CompanyType type;
     private String zipCode;
     @Column(length =255)
     private String address;
+    @Enumerated(EnumType.STRING)
     private State state;
     private boolean enabled;
+    @Enumerated(EnumType.STRING)
+    private CompanyStatus companyStatus;
 }

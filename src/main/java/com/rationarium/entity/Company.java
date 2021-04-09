@@ -29,5 +29,6 @@ public class Company extends BaseEntity{
     private String email;
     private LocalDate establishmentDate;
     private boolean enabled;
+    private String phoneNumber;
 
 }

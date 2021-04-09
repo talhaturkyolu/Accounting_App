@@ -1,13 +1,12 @@
 package com.rationarium.entity;
 
+import com.rationarium.enums.Unit;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -22,7 +21,8 @@ public class Product extends BaseEntity{
     private Integer price;
     @ManyToOne(fetch = FetchType.LAZY)
     private Category category;
-    private String unit;
+    @Enumerated(EnumType.STRING)
+    private Unit unit;
     private Integer lowLimitAlert;
     private Integer tax;
     @ManyToOne(fetch = FetchType.LAZY)

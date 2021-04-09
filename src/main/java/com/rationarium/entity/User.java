@@ -1,5 +1,6 @@
 package com.rationarium.entity;
 
+import com.rationarium.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,6 +27,7 @@ public class User extends BaseEntity{
     @Column(length = 50)
     private boolean enabled;
     private String phone;
+    private Status status;
 
 
     @ManyToMany
